@@ -46,15 +46,6 @@ public:
 	// First-person mesh (arms), visible only to the owning player.
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		USkeletalMeshComponent* FPSMesh;
-
-
-	// Gun muzzle's offset from the camera location.
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-		FVector MuzzleOffset;
-
-	// Projectile class to spawn.
-	UPROPERTY(EditDefaultsOnly, Category = Projectile)
-		TSubclassOf<class AFPSProjectile> ProjectileClass;
 	
 	//health property
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
